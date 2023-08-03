@@ -48,7 +48,7 @@ Here we have given a one-year valid time for our gpg key after confirming with â
 If you set a password you need to enter your password whenever you made a commit.
 If you do not want to set a password keep it empty and press enter or ok.
 
-**Step 8:** Use the `gpg --list-secret-keys --keyed-format=long` command to list the long form of the GPG keys for which you have both a public and private key. A private key is required for signing commits or tags.
+**Step 8:** Use the `gpg --list-secret-keys --keyid-format=long` command to list the long form of the GPG keys for which you have both a public and private key. A private key is required for signing commits or tags.
 
 **Step 9:** From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `A006AFF752B70EA`.
 
