@@ -50,13 +50,13 @@ If you do not want to set a password keep it empty and press enter or ok.
 
 **Step 8:** Use the `gpg --list-secret-keys --keyid-format=long` command to list the long form of the GPG keys for which you have both a public and private key. A private key is required for signing commits or tags.
 
-**Step 9:** From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `A006AFF752B70EA`.
+**Step 9:** From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `64D884ABBF2C1D27`.
 
 ![image.png](https://atlas.i.camp/uploads/images/gallery/2023-07/scaled-1680-/NKzYHNOe1FLfqZs0-image.png)
 
-**Step 10:** Paste the text below, substituting the GPG key ID you'd like to use. In this example, the GPG key ID is `A006AFF752B70EA`:
+**Step 10:** Paste the text below, substituting the GPG key ID you'd like to use. In this example, the GPG key ID is `64D884ABBF2C1D27`:
 
-`gpg --armor --export A006AFF752B70EA`
+`gpg --armor --export 64D884ABBF2C1D27`
 
  The above command will prints the GPG key ID, in ASCII armor format
 
@@ -70,13 +70,13 @@ If you do not want to set a password keep it empty and press enter or ok.
 
 **Step 2:** Use the `gpg --list-secret-keys --keyid-format=long` command to list the long form of the GPG keys for which you have both a public and private key. A private key is required for signing commits or tags.
 
-**Step 3:** From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `A006AFF752B70EA`:
+**Step 3:** From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `64D884ABBF2C1D27`:
 
 ![image.png](https://atlas.i.camp/uploads/images/gallery/2023-07/scaled-1680-/MWYiAdItxOjzyaCt-image.png)
 
   
 **Step 4:** To set your primary GPG signing key in Git, paste the text below, substituting in the GPG primary key ID you'd like to use. In this example, the GPG key ID `A006AFF752B70EA`:  
-`git config --global user.signingkey A006AFF752B70EA`
+`git config --global user.signingkey 64D884ABBF2C1D27`
 
 **Step 5:** To configure Git to sign all commits by default, enter the following command:
 
