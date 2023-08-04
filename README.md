@@ -75,7 +75,7 @@ If you do not want to set a password keep it empty and press enter or ok.
 ![image.png](https://atlas.i.camp/uploads/images/gallery/2023-07/scaled-1680-/MWYiAdItxOjzyaCt-image.png)
 
   
-**Step 4:** To set your primary GPG signing key in Git, paste the text below, substituting in the GPG primary key ID you'd like to use. In this example, the GPG key ID `A006AFF752B70EA`:  
+**Step 4:** To set your primary GPG signing key in Git, paste the text below, substituting in the GPG primary key ID you'd like to use. In this example, the GPG key ID `64D884ABBF2C1D27`:  
 `git config --global user.signingkey 64D884ABBF2C1D27`
 
 **Step 5:** To configure Git to sign all commits by default, enter the following command:
