@@ -15,7 +15,10 @@ GitHub supports several GPG key algorithms. If you try to add a key generated wi
 
 **Step 1:** Open Terminal
 
-**Step 2:** Generate a GPG key pair, use the command gpg --full-generate-key to generate a GPG key pair.
+**Step 2:** Generate a GPG key pair, use the command `gpg --full-generate-key` to generate a GPG key pair.
+```nginx
+gpg --full-generate-key
+```
 
 **Step 3:** At the prompt, specify the kind of key you want, or press Enter to accept the default.
 
@@ -49,6 +52,9 @@ If you set a password you need to enter your password whenever you made a commit
 If you do not want to set a password keep it empty and press enter or ok.
 
 **Step 8:** Use the `gpg --list-secret-keys --keyid-format=long` command to list the long form of the GPG keys for which you have both a public and private key. A private key is required for signing commits or tags.
+```nginx
+gpg --list-secret-keys --keyid-format=long
+```
 
 **Step 9:** From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `64D884ABBF2C1D27`.
 
@@ -56,7 +62,9 @@ If you do not want to set a password keep it empty and press enter or ok.
 
 **Step 10:** Paste the text below, substituting the GPG key ID you'd like to use. In this example, the GPG key ID is `64D884ABBF2C1D27`:
 
-`gpg --armor --export 64D884ABBF2C1D27`
+```nginx
+gpg --armor --export 64D884ABBF2C1D27
+```
 
  The above command will prints the GPG key ID, in ASCII armor format
 
@@ -70,14 +78,22 @@ If you do not want to set a password keep it empty and press enter or ok.
 
 **Step 2:** Use the `gpg --list-secret-keys --keyid-format=long` command to list the long form of the GPG keys for which you have both a public and private key. A private key is required for signing commits or tags.
 
+```nginx
+gpg --list-secret-keys --keyid-format=long
+```
+
 **Step 3:** From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `64D884ABBF2C1D27`:
 
 ![image.png](https://atlas.i.camp/uploads/images/gallery/2023-07/scaled-1680-/MWYiAdItxOjzyaCt-image.png)
 
   
 **Step 4:** To set your primary GPG signing key in Git, paste the text below, substituting in the GPG primary key ID you'd like to use. In this example, the GPG key ID `64D884ABBF2C1D27`:  
-`git config --global user.signingkey 64D884ABBF2C1D27`
+```nginx
+git config --global user.signingkey 64D884ABBF2C1D27
+```
 
 **Step 5:** To configure Git to sign all commits by default, enter the following command:
 
-`git config --global commit.gpgsign true`
+```nginx
+git config --global commit.gpgsign true
+```
